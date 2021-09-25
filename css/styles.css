@@ -1,0 +1,125 @@
+/* Font Declaration */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Color Declaration */
+:root {
+    --primary: #0095da;
+    --seconday: #05233e;
+    --hover: #e68324;
+    --text: #777;
+    --dark: #333;
+    --light: #ddd;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Disable form outline from Bootstrap */
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Reset Links */
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: var(--primary);
+    transition: color ease-in .3s;
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+/* Button Customization */
+.btn {
+    transition: all ease-in .3s;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    border-color: var(--hover);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-dark {
+    background-color: var(--dark);
+}
+
+/* Top right menu button */
+.my-btn {
+    width: 50px;
+    height: 50px;
+}
+
+.my-btn img{
+    width: 150%;
+}
+
+/* Button outline reset */
+.my-btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.my-btn:hover {
+    background-color: #262626 !important;
+    border-color: #262626 !important;
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: 85vh;
+    padding-left: 0 !important;
+}
+
+.fa-circle {
+    color: green;
+}
+
+.user-info h5 {
+    transition: color ease-in .3s;
+}
+
+.user-info:hover h5 {
+    color: var(--hover);
+}
+
+.sidebar-menu ul li a {
+    display: block;
+    border-bottom: 1px solid var(--dark);
+    color: var(--primary);
+    transition: color ease-in .3s;
+}
+
+.sidebar-menu ul li a:first-child {
+    border-top: 1px solid var(--dark);
+}
+
+.sidebar-menu ul li a:hover {
+    color: var(--hover);
+}
+
+/* Footer */
+.devziaus {
+    color: var(--primary);
+    transition: color ease-in .3s;
+}
+
+.devziaus:hover {
+    color: var(--hover);
+}
+

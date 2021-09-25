@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Admin Panel</title>
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="container-fluid bg-dark py-2">
+      <div class="container d-flex justify-content-end">
+        <div class="btn-group">
+          <button type="button" class="btn my-btn rounded-circle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="rounded-circle" src="./img/avatar.jpg" alt="Profile Pic">
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">View Profile</a></li>
+            <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </header>
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="col-md-2 bg-dark text-light sidebar">
+          <div class="user-info">
+            <div class="user-image rounded-circle py-2 d-flex justify-content-center">
+              <img class="img-fluid rounded-circle w-50" src="./img/avatar.jpg" alt="Profile Pic">
+            </div>
+            <h5 class="text-center">Md Ziaus Samad</h5>
+            <p class="text-center"><span class="small"><i class="fas fa-circle"></i> Online</span></p>
+          </div>
+          <div class="sidebar-menu">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fas fa-home"></i> Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-user-circle"></i> User</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-bandcamp"></i> Banner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-power-off"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="col-md-10 main-content-area">
+          <div class="row">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb py-3">
+                <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="main-content">
+              <form action="#" method="post">
+                <div class="card text-center">
+                    <div class="card-header d-flex justify-content-between">
+                        <h5 class="card-title"><i class="fab fa-gg-circle"></i> VIEW DATA</h5>
+                        <a href="#" class="btn btn-dark btn-sm"><i class="fas fa-th"></i> FORM</a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped">
+                              <tbody>
+                                <tr>
+                                  <td class="text-end">Name</td>
+                                  <td>:</td>
+                                  <td class="text-start">Md Ziaus Samad</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-end">Email</td>
+                                    <td>:</td>
+                                    <td class="text-start">dev.ziaus@gmail.com</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="text-end">Phone</td>
+                                    <td>:</td>
+                                    <td class="text-start">+8801912284879</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="text-end">Username</td>
+                                    <td>:</td>
+                                    <td class="text-start">DevZiaus</td>
+                                  </tr>
+                                
+                              </tbody>
+                          </table>
+                    </div>
+                    <div class="card-footer text-center py-4">
+                      <button type="submit" class="btn btn-sm btn-primary">Edit</button>
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer class="container-fluid bg-dark text-light d-flex justify-content-center align-items-center pt-2">
+      <p> 
+        &copy; Copyright 
+        <script type="text/JavaScript">document.write(new Date().getFullYear());
+        </script>
+        <a class="devziaus" href="https://www.devziaus.ga">DevZiaus</a> | All rights reserved.
+      </p>
+    </footer>
+    <script src="./js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="./js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="./js/vendor/all.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
