@@ -30,7 +30,7 @@
     </header>
     <main class="container-fluid">
       <div class="row">
-        <aside class="col-md-2 bg-dark text-light sidebar">
+        <aside class="col-md-3 col-lg-2 bg-dark text-light sidebar">
           <div class="user-info">
             <div class="user-image rounded-circle py-2 d-flex justify-content-center">
               <img class="img-fluid rounded-circle w-50" src="./img/avatar.jpg" alt="Profile Pic">
@@ -38,24 +38,29 @@
             <h5 class="text-center">Md Ziaus Samad</h5>
             <p class="text-center"><span class="small"><i class="fas fa-circle"></i> Online</span></p>
           </div>
-          <div class="sidebar-menu">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#"><i class="fas fa-home"></i> Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-user-circle"></i> User</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-bandcamp"></i> Banner</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-power-off"></i> Logout</a>
-              </li>
-            </ul>
-          </div>
+          <nav class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-menu collapse navbar-collapse" id="sidebar-menu">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><i class="fas fa-home"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-user-circle"></i> User</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fab fa-bandcamp"></i> Banner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-power-off"></i> Logout</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </aside>
-        <div class="col-md-10 main-content-area">
+        <div class="col-md-9 col-lg-10 main-content-area">
           <div class="row">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb py-3">
@@ -67,16 +72,17 @@
           <div class="row">
             <div class="main-content">
               <form action="#" method="post">
-                <div class="card text-center">
+                <div class="offset-sm-1 col-sm-10 card text-center">
                     <div class="card-header d-flex justify-content-between">
                         <h5 class="card-title"><i class="fab fa-gg-circle"></i> TABLE DATA</h5>
                         <a href="#" class="btn btn-dark btn-sm"><i class="fas fa-th"></i> FORM</a>
                     </div>
                     <div class="card-body">
+                      <div class="table-responsive">
                         <table class="table table-bordered table-striped">
                             <thead class="bg-dark text-light">
                                 <tr>
-                                  <th scope="col">#</th>
+                                  <th scope="col-2">#</th>
                                   <th scope="col">Name</th>
                                   <th scope="col">Email</th>
                                   <th scope="col">Phone</th>
@@ -123,7 +129,8 @@
                                   </tr>
                                 
                               </tbody>
-                          </table>
+                        </table>
+                      </div>
                     </div>
                     <div class="card-footer text-center py-4">
                         

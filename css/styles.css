@@ -81,6 +81,10 @@ a:hover {
 }
 
 /* Sidebar */
+.container-fluid .row > * {
+    padding-right: 0 !important;
+}
+
 .sidebar {
     min-height: 85vh;
     padding-left: 0 !important;
@@ -97,6 +101,8 @@ a:hover {
 .user-info:hover h5 {
     color: var(--hover);
 }
+
+
 
 .sidebar-menu ul li a {
     display: block;
@@ -123,3 +129,31 @@ a:hover {
     color: var(--hover);
 }
 
+
+
+/* media Queries */
+@media only screen and (min-width: 769px) {
+    .navbar-expand-md .navbar-collapse {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .right-menu {
+        visibility: hidden;
+    }
+
+    .user-image img {
+        width: 25% !important;
+    } 
+
+    .sidebar {
+        min-height: 40vh;
+    }
+
+    .navbar-toggler-icon {
+        display: inline-block;
+        text-align: center;
+    }
+    
+}
